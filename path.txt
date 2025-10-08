@@ -1,0 +1,36 @@
+mirror-of-truth/
+│
+├── backend/                 # Node.js + Express + PostgreSQL
+│   ├── package.json
+│   ├── server.js            # entry point ของ backend
+│   ├── db.js                # ตั้งค่า connection กับ PostgreSQL
+│   ├── routes/
+│   │   ├── auth.js          # login/signup
+│   │   ├── reflection.js    # CRUD คำตอบผู้ใช้
+│   │   └── question.js      # ดึงคำถามวันนี้
+│   ├── models/
+│   │   ├── User.js          # user model
+│   │   ├── Question.js      # questions model
+│   │   └── Reflection.js    # reflections model
+│   └── utils/
+│       └── generateDailyQuestion.js  # ฟังก์ชันสุ่มคำถามประจำวัน
+│
+├── frontend/                # React + Tailwind
+│   ├── package.json
+│   ├── vite.config.js
+│   └── src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       ├── pages/
+│       │   ├── Login.jsx
+│       │   ├── Signup.jsx
+│       │   ├── Dashboard.jsx
+│       │   └── ReflectionToday.jsx   # หน้าโชว์คำถามวันนี้ + ตอบ
+│       ├── components/
+│       │   ├── QuestionCard.jsx       # แสดงคำถาม + input
+│       │   ├── ReflectionTimeline.jsx # แสดง timeline ของผู้ใช้
+│       │   └── Navbar.jsx
+│       └── services/
+│           └── api.js                # Axios เรียก API
+│
+└── README.md

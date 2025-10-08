@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body,
+#root {
+  @apply min-h-screen bg-gradient-to-tl to-[#10172d] via-[#59168b] from-[#301c54];
+}
