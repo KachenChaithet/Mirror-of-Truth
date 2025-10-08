@@ -1,16 +1,30 @@
-# React + Vite
+# Mirror of Truth
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Mirror of Truth** แอปสะท้อนตัวเองรายวัน ช่วยให้ผู้ใช้ติดตามพัฒนาการและความเข้าใจตัวเองผ่านคำถามความหมายลึกทุกวัน  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## คุณสมบัติหลัก (Features)
 
-## React Compiler
+- คำถามสะท้อนตัวเองเปลี่ยนทุกวัน  
+- บันทึกคำตอบและดู timeline ของพัฒนาการตัวเอง  
+- UI แบบมินิมอล ใช้งานง่าย  
+- รองรับการ login / register ด้วย Clerk.dev  
+- Protected route สำหรับผู้ใช้ที่ login แล้ว  
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## เทคโนโลยี (Tech Stack)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Frontend
+React.js + Tailwind CSS
+
+# Authentication
+Clerk.dev
+
+# Routing
+React Router v6
+
+# Database (Optional)
+PostgreSQL / Supabase
