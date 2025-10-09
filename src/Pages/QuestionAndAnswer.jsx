@@ -7,7 +7,6 @@ import Navbar from "../Components/Navbar"
 const QuestionAndAnswer = () => {
     return (
         <>
-            <Navbar />
             <div className=" w-full min-h-screen bg-gradient-to-tl to-[#10172d] via-[#59168b] relative from-[#301c54] py-8 px-4">
                 {/* UserButton มุมบนขวา */}
                 <div className="absolute top-4 right-4">

@@ -7,7 +7,7 @@ const Answer = () => {
                 <h1 className="text-2xl text-[#e6d5f7] font-medium">Your Truth Journal</h1>
                 <p className="text-[#b1a4c1] ">Write your honest thoughts and reflections</p>`
             </div>
-            <div className="w-[60%] relative">
+            <div className="w-[90%] md:w-[60%] relative">
                 <textarea
                     className="w-full bg-white/10 h-[200px] border border-[#804cb2] outline-0 rounded-md focus:border-[#dabdf5] focus:outline-white/20 focus:outline-4 text-white p-4 resize-none"
                     placeholder="เขียน Reflection ของคุณที่นี่..."

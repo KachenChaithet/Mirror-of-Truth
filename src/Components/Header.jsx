@@ -27,20 +27,20 @@ const Header = () => {
     }, []);
 
     return (
-        <div className="w-full flex items-center flex-col gap-4">
+        <div className="w-full flex items-center flex-col gap-4 ">
             <div className="flex flex-col gap-2 items-center">
-                <h1 className="text-[#e6d5f7] font-medium text-6xl">Mirror of Truth</h1>
-                <p className="text-[#b1a4c1] font-semibold">A space for authentic self-reflection and honest introspection</p>
+                <h1 className="text-[#e6d5f7] font-medium text-4xl md:text-6xl ">Mirror of Truth</h1>
+                <p className="text-[#b1a4c1] font-semibold text-[12px] md:text-[16px]">A space for authentic self-reflection and honest introspection</p>
             </div>
             <div className="flex flex-col items-center justify-center">
                 <h1
-                    className={`mt-4 text-center transition-opacity text-[#b1a4c1] text-3xl md:text-2xl duration-500 ${fade ? "opacity-100" : "opacity-0"
+                    className={`mt-4 text-center transition-opacity text-[#b1a4c1] text-3xl md:text-2.5xl duration-500 ${fade ? "opacity-100" : "opacity-0"
                         }`}
                 >
                     {texts[index].text}
                 </h1>
                 <h2
-                    className="mt-4 text-center text-[#b1a4c1] text-xl"
+                    className="mt-4 text-center text-[#b1a4c1] text-lg md:text-xl"
                 >
                     - {texts[index].by}
                 </h2>

@@ -5,6 +5,7 @@ import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import ShowAnswer from "./Pages/ShowAnswer"
 import NotFound from "./Pages/NotFound"
+import Layout from "./Components/Layout"
 
 const ProtectedRoute = () => {
   const { isSignedIn, isLoaded } = useUser()
@@ -27,8 +28,10 @@ function App() {
 
         {/* Protected routes */}
         <Route element={<ProtectedRoute />}>
-          <Route path="/" element={<QuestionAndAnswer />} />
-          <Route path="/show" element={<ShowAnswer />} />
+          <Route element={<Layout />}>
+            <Route path="/" element={<QuestionAndAnswer />} />
+            <Route path="/show" element={<ShowAnswer />} />
+          </Route>
         </Route>
 
         {/* ถ้า path ไม่ match ให้ไปหน้า login */}
