@@ -63,14 +63,13 @@ export const getOwnPerspectives = async (req, res) => {
             where: {
                 authorId: userId, // <--- เพิ่มเงื่อนไขการกรอง
             },
-            include: {
-                author: {
-                    select: {
-                        id: true,
-                        name: true,
-                    }
-                }
+            select: {
+                id: true,
+                title: true,
+                content: true,
+                createdAt: true,
             }
+
         });
 
         res.json(perspectives);
