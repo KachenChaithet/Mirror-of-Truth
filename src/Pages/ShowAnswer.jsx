@@ -46,7 +46,6 @@ const ShowAnswer = () => {
       transition={{ duration: 0.3, ease: "easeOut" }}
       className="p-10 w-full flex flex-col justify-center items-center gap-10"
     >
-      {/* header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -56,13 +55,12 @@ const ShowAnswer = () => {
         <div className="bg-white/20 p-6 rounded-full">
           <BookOpen className="text-white size-10" />
         </div>
-        <div className="text-[#eddcff] flex flex-col items-center justify-center gap-4">
-          <h1 className="text-5xl">All Perspectives</h1>
-          <p className="text-[#baaec7] w-[690px] text-center">Browse through all reflection questions and their perspectives. Use the search to find specific topics.</p>
+        <div className="text-[#eddcff] flex flex-col text-center items-center justify-center gap-4">
+          <h1 className="text-4xl md:text-5xl ">All Perspectives</h1>
+          <p className="text-[#baaec7] w-auto text-center">Browse through all reflection questions and their perspectives. Use the search to find specific topics.</p>
         </div>
       </motion.div>
 
-      {/* search */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -79,7 +77,6 @@ const ShowAnswer = () => {
         />
       </motion.div>
 
-      {/* show reflections.length */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
