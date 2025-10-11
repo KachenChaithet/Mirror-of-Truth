@@ -112,7 +112,7 @@ const ShowAnswer = () => {
             className="bg-white/10 flex rounded-md p-4 gap-4 w-full"
           >
             <div className="text-white bg-[#64349d] w-[32px] h-[32px] border border-white/40 rounded-full flex justify-center items-center">
-              {item.id}
+              {index + 1}
             </div>
             <div className="flex flex-col gap-4 w-full">
               <h1 className="text-white font-semibold text-[20px] ">{item.title}</h1>
