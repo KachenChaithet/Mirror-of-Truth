@@ -12,7 +12,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: 'https://mirror-of-truth.onrender.com/',
+    origin: 'https://mirror-of-truth.onrender.com',
     credentials: true
 }));
 
