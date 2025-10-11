@@ -4,6 +4,8 @@ import axios from "axios"
 import { useAuth } from "@clerk/clerk-react"
 import { useState } from "react"
 import toast from "react-hot-toast"
+import { axiosInstance } from "../utils/axiosInstance"
+import { API_PATHS } from "../utils/apiPath"
 
 const Answer = () => {
     const { todayQuestion } = useQuestionContext()
@@ -18,7 +20,7 @@ const Answer = () => {
         }
         const token = await getToken()
         try {
-            const res = await axios.post('http://localhost:5000/api/perspectives', { title: Questiontoday, content: content }, {
+            const res = await axiosInstance.post(API_PATHS.FUCNTION.GETALL, { title: Questiontoday, content: content }, {
                 headers: {
                     'clerk': token
                 }
